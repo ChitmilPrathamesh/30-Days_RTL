@@ -1,4 +1,4 @@
-module Mux2x1_tb ();
+module Mux2_1_tb ();
   reg a,b,s;
   wire o;
   
@@ -9,7 +9,6 @@ module Mux2x1_tb ();
     s = 1;#10;
     $finish;
   end
-  
   initial begin
     $monitor ("$Time: %0t|a:%b|b:%b|s:%b|o:%b",$time,a,b,s,o);
   end
